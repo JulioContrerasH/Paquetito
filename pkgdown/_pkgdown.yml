@@ -1,0 +1,33 @@
+title: rgeeExtra
+url: https://r-earthengine.github.io/rgeeExtra/
+template:
+  params:
+      bootswatch: flatly
+
+navbar:
+  left:
+    - icon: fa-home
+      href: index.html
+  right:
+    - text: "Articles"
+      icon: fas fa-book
+      menu:
+      -  text: Introduction
+         href: articles/Introduction.html
+      -  text: Image
+         href: articles/Image.html
+      -  text: Image Collection
+         href: articles/ImageCollection.html
+      -  text: Feature
+         href: articles/Feature.html
+      -  text: Feature Collection
+         href: articles/FeatureCollection.html
+    - icon: fa fa-newspaper-o
+      text: "news"
+      href: news/index.html
+    - icon: fa fa-file-code-o
+      text: "functions"
+      href: reference/index.html
+    - icon: fa fa-github fa-lg
+      text: "github"
+      href: https://github.com/r-earthengine/rgeeExtra/

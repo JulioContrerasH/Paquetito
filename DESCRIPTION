@@ -1,0 +1,58 @@
+Package: rgeeExtra
+Title: Extensions for 'rgee'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Cesar",
+           family = "Aybar",
+           role = c("aut", "cre"),
+           email = "csaybar@gmail.com",
+           comment = c(ORCID = "0000-0003-2745-9535")),
+      person(given = "David",
+           family = "Montero",
+	         role = c("ctb"),
+	         email = "dml.mont@gmail.com",
+	         comment = c(ORCID = "0000-0002-9010-3286")),
+      person(given = "Lesly",
+           family = "Bautista",
+	         role = c("ctb"),
+	         email = "leslyarcelly.213@gmail.com",
+	         comment = c(ORCID = "0000-0003-3523-8687")),
+      person(given = "Marc",
+           family = "Choisy",
+	         role = c("ctb"),
+	         email = "mchoisy@oucru.org",
+	         comment = c(ORCID = "0000-0002-5187-6390"))
+    )
+Description: High-level API to process Google Earth Engine (GEE) raster (ee.Image and ee.ImageCollection) and vector data (ee.Geometry, ee.Feature, and ee.FeatureCollection). Popular Third-party GEE algorithms are re-coded from Javascript and Python to R.
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "earthengine-api")
+    )
+  )
+Imports:
+    reticulate (>= 1.31),
+    rgee,
+    magrittr,
+    crayon,
+    cli
+Suggests:
+    testthat (>= 3.0.0),
+    googledrive,
+    googleCloudStorageR,
+    geojsonio,
+    magick,
+    stars,
+    sf,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+BugReports: https://github.com/r-earthengine/rgeeExtra/issues
+URL: https://github.com/r-earthengine/rgeeExtra
+Config/testthat/edition: 3
